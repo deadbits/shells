@@ -1,7 +1,7 @@
 /* 
  * basic TCP bindshell
  * 
- * https://github.com/ohdae/shells
+ * https://github.com/deadbits/shells
  */
 
 #include <stdio.h>
